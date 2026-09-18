@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews — Admin — Graham Bliss</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+
+  <aside class="admin-side">
+    <a href="index.html" class="logo">Graham Bliss<span class="dot">.</span></a>
+    <nav class="admin-nav">
+      <a href="admin.html">Dashboard</a>
+      <a href="admin-products.html">Products</a>
+      <a href="admin-orders.html">Orders</a>
+      <a href="admin-reviews.html" class="active">Reviews</a>
+      <a href="admin-customers.html">Customers</a>
+      <a href="admin-settings.html">Settings</a>
+    </nav>
+    <a href="index.html" class="back-site">← Back to site</a>
+  </aside>
+
+  <main class="admin-main">
+
+    <div class="admin-head">
+      <div>
+        <h1>Reviews</h1>
+        <p>Moderate what shows up on the public Reviews page.</p>
+      </div>
+      <div class="admin-user">
+        <div class="admin-avatar">A</div>
+        <span>Admin</span>
+      </div>
+    </div>
+
+    <div class="stat-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="stat-card">
+        <span class="label">Average rating</span>
+        <span class="value">4.8</span>
+        <span class="delta up">from 128 reviews</span>
+      </div>
+      <div class="stat-card">
+        <span class="label">Published</span>
+        <span class="value">6</span>
+        <span class="delta up">visible on site</span>
+      </div>
+      <div class="stat-card">
+        <span class="label">Awaiting approval</span>
+        <span class="value">2</span>
+        <span class="delta down">needs a look</span>
+      </div>
+    </div>
+
+    <section class="admin-panel">
+      <div class="admin-panel-head">
+        <h2>Published on site</h2>
+      </div>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Rating</th>
+            <th>Review</th>
+            <th>Context</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mika R.</td>
+            <td>★★★★★</td>
+            <td style="max-width:280px;">"The ube one disappears first every time we order for the office."</td>
+            <td>Repeat customer, Lucena</td>
+            <td><div class="row-actions"><button title="Remove">✕</button></div></td>
+          </tr>
+          <tr>
+            <td>Jonel T.</td>
+            <td>★★★★★</td>
+            <td style="max-width:280px;">"Ordered 5 boxes for my daughter's party and they arrived cold and intact."</td>
+            <td>Party order, Sariaya</td>
+            <td><div class="row-actions"><button title="Remove">✕</button></div></td>
+          </tr>
+          <tr>
+            <td>Angel P.</td>
+            <td>★★★★☆</td>
+            <td style="max-width:280px;">"Matcha could use a touch more bitterness, but everything else was gone within a day."</td>
+            <td>Monthly subscriber</td>
+            <td><div class="row-actions"><button title="Remove">✕</button></div></td>
+          </tr>
+          <tr>
+            <td>Carlo D.</td>
+            <td>★★★★★</td>
+            <td style="max-width:280px;">"Bought as pasalubong going back to Manila and it survived the whole bus ride."</td>
+            <td>Pasalubong buyer</td>
+            <td><div class="row-actions"><button title="Remove">✕</button></div></td>
+          </tr>
+          <tr>
+            <td>Trisha L.</td>
+            <td>★★★★★</td>
+            <td style="max-width:280px;">"Mango cheese tastes like the mango float my lola used to make."</td>
+            <td>First-time buyer</td>
+            <td><div class="row-actions"><button title="Remove">✕</button></div></td>
+          </tr>
+          <tr>
+            <td>Ronnel S.</td>
+            <td>★★★★★</td>
+            <td style="max-width:280px;">"Delivery was on time and the packaging kept everything from sliding around."</td>
+            <td>Repeat customer, Sariaya</td>
+            <td><div class="row-actions"><button title="Remove">✕</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="admin-panel">
+      <div class="admin-panel-head">
+        <h2>Awaiting approval</h2>
+      </div>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Rating</th>
+            <th>Review</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reniel A.</td>
+            <td>★★★★★</td>
+            <td style="max-width:320px;">"Best graham balls in Sariaya, hands down. Will order again for my mom's birthday."</td>
+            <td><div class="row-actions"><button title="Approve">✓</button><button title="Reject">✕</button></div></td>
+          </tr>
+          <tr>
+            <td>Bea F.</td>
+            <td>★★★☆☆</td>
+            <td style="max-width:320px;">"Good but a bit pricey for the size. Taste is solid though."</td>
+            <td><div class="row-actions"><button title="Approve">✓</button><button title="Reject">✕</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

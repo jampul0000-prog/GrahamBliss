@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings — Admin — Graham Bliss</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+
+  <aside class="admin-side">
+    <a href="index.html" class="logo">Graham Bliss<span class="dot">.</span></a>
+    <nav class="admin-nav">
+      <a href="admin.html">Dashboard</a>
+      <a href="admin-products.html">Products</a>
+      <a href="admin-orders.html">Orders</a>
+      <a href="admin-reviews.html">Reviews</a>
+      <a href="admin-customers.html">Customers</a>
+      <a href="admin-settings.html" class="active">Settings</a>
+    </nav>
+    <a href="index.html" class="back-site">← Back to site</a>
+  </aside>
+
+  <main class="admin-main">
+
+    <div class="admin-head">
+      <div>
+        <h1>Settings</h1>
+        <p>Store details shown across the site.</p>
+      </div>
+      <div class="admin-user">
+        <div class="admin-avatar">A</div>
+        <span>Admin</span>
+      </div>
+    </div>
+
+    <section class="admin-panel" style="padding-bottom:26px;">
+      <div class="admin-panel-head">
+        <h2>Store info</h2>
+      </div>
+      <form>
+        <div class="form-row">
+          <div>
+            <label for="storeName">Store name</label>
+            <input type="text" id="storeName" value="Graham Bliss">
+          </div>
+          <div>
+            <label for="storeTagline">Tagline</label>
+            <input type="text" id="storeTagline" value="Handmade graham balls">
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="storeEmail">Contact email</label>
+            <input type="email" id="storeEmail" value="ellareniel15@gmail.com">
+          </div>
+          <div>
+            <label for="storePhone">Contact phone</label>
+            <input type="text" id="storePhone" value="0963 059 8304">
+          </div>
+        </div>
+        <div>
+          <label for="storeAddress">Address</label>
+          <input type="text" id="storeAddress" value="Sariaya, Quezon, Philippines">
+        </div>
+        <button class="btn-primary" type="submit" style="justify-self:start;margin-top:6px;">Save changes</button>
+      </form>
+    </section>
+
+    <section class="admin-panel" style="padding-bottom:26px;">
+      <div class="admin-panel-head">
+        <h2>Social links</h2>
+      </div>
+      <form>
+        <div>
+          <label for="fbLink">Facebook</label>
+          <input type="text" id="fbLink" value="facebook.com/mel.jhune.958523">
+        </div>
+        <div>
+          <label for="igLink">Instagram</label>
+          <input type="text" id="igLink" value="instagram.com/itss_ur.mel">
+        </div>
+        <div>
+          <label for="ttLink">TikTok</label>
+          <input type="text" id="ttLink" value="tiktok.com/@mel.dailo">
+        </div>
+        <button class="btn-primary" type="submit" style="justify-self:start;margin-top:6px;">Save changes</button>
+      </form>
+    </section>
+
+    <section class="admin-panel" style="padding-bottom:26px;">
+      <div class="admin-panel-head">
+        <h2>Admin account</h2>
+      </div>
+      <form>
+        <div class="form-row">
+          <div>
+            <label for="adminEmail">Email</label>
+            <input type="email" id="adminEmail" placeholder="admin@grahambliss.com">
+          </div>
+          <div>
+            <label for="adminPassword">New password</label>
+            <input type="password" id="adminPassword" placeholder="••••••••">
+          </div>
+        </div>
+        <button class="btn-primary" type="submit" style="justify-self:start;margin-top:6px;">Update account</button>
+      </form>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

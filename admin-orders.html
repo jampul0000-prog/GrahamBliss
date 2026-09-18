@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orders — Admin — Graham Bliss</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+
+  <aside class="admin-side">
+    <a href="index.html" class="logo">Graham Bliss<span class="dot">.</span></a>
+    <nav class="admin-nav">
+      <a href="admin.html">Dashboard</a>
+      <a href="admin-products.html">Products</a>
+      <a href="admin-orders.html" class="active">Orders</a>
+      <a href="admin-reviews.html">Reviews</a>
+      <a href="admin-customers.html">Customers</a>
+      <a href="admin-settings.html">Settings</a>
+    </nav>
+    <a href="index.html" class="back-site">← Back to site</a>
+  </aside>
+
+  <main class="admin-main">
+
+    <div class="admin-head">
+      <div>
+        <h1>Orders</h1>
+        <p>Every order that's come in, newest first.</p>
+      </div>
+      <div class="admin-user">
+        <div class="admin-avatar">A</div>
+        <span>Admin</span>
+      </div>
+    </div>
+
+    <section class="admin-panel">
+      <div class="admin-panel-head">
+        <h2>All orders (8)</h2>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="btn-secondary" style="padding:8px 16px;font-size:.82rem;">All</a>
+          <a href="#" class="btn-secondary" style="padding:8px 16px;font-size:.82rem;">Pending</a>
+          <a href="#" class="btn-secondary" style="padding:8px 16px;font-size:.82rem;">Fulfilled</a>
+        </div>
+      </div>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Order</th>
+            <th>Customer</th>
+            <th>Items</th>
+            <th>Total</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#GB-1042</td>
+            <td>Ella R.</td>
+            <td>Ube x2, Matcha x1</td>
+            <td>₱450</td>
+            <td>Sep 18, 2026</td>
+            <td><span class="status-pill pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>#GB-1041</td>
+            <td>Clarence M.</td>
+            <td>Classic x6</td>
+            <td>₱720</td>
+            <td>Sep 18, 2026</td>
+            <td><span class="status-pill fulfilled">Fulfilled</span></td>
+          </tr>
+          <tr>
+            <td>#GB-1040</td>
+            <td>Dailo S.</td>
+            <td>Choco Overload x3</td>
+            <td>₱420</td>
+            <td>Sep 17, 2026</td>
+            <td><span class="status-pill fulfilled">Fulfilled</span></td>
+          </tr>
+          <tr>
+            <td>#GB-1039</td>
+            <td>Jake T.</td>
+            <td>Mango x2, Ube x2</td>
+            <td>₱580</td>
+            <td>Sep 17, 2026</td>
+            <td><span class="status-pill pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>#GB-1038</td>
+            <td>Mika R.</td>
+            <td>Ube x4</td>
+            <td>₱600</td>
+            <td>Sep 16, 2026</td>
+            <td><span class="status-pill fulfilled">Fulfilled</span></td>
+          </tr>
+          <tr>
+            <td>#GB-1037</td>
+            <td>Jonel T.</td>
+            <td>Classic x10, Choco Overload x5</td>
+            <td>₱1,900</td>
+            <td>Sep 15, 2026</td>
+            <td><span class="status-pill fulfilled">Fulfilled</span></td>
+          </tr>
+          <tr>
+            <td>#GB-1036</td>
+            <td>Angel P.</td>
+            <td>Matcha x3</td>
+            <td>₱450</td>
+            <td>Sep 15, 2026</td>
+            <td><span class="status-pill pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>#GB-1035</td>
+            <td>Carlo D.</td>
+            <td>Classic x4, Mango x2</td>
+            <td>₱760</td>
+            <td>Sep 14, 2026</td>
+            <td><span class="status-pill fulfilled">Fulfilled</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

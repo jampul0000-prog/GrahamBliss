@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Admin — Graham Bliss</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+
+  <aside class="admin-side">
+    <a href="index.html" class="logo">Graham Bliss<span class="dot">.</span></a>
+    <nav class="admin-nav">
+      <a href="admin.html">Dashboard</a>
+      <a href="admin-products.html" class="active">Products</a>
+      <a href="admin-orders.html">Orders</a>
+      <a href="admin-reviews.html">Reviews</a>
+      <a href="admin-customers.html">Customers</a>
+      <a href="admin-settings.html">Settings</a>
+    </nav>
+    <a href="index.html" class="back-site">← Back to site</a>
+  </aside>
+
+  <main class="admin-main">
+
+    <div class="admin-head">
+      <div>
+        <h1>Products</h1>
+        <p>Manage what's for sale and keep stock counts up to date.</p>
+      </div>
+      <div class="admin-user">
+        <div class="admin-avatar">A</div>
+        <span>Admin</span>
+      </div>
+    </div>
+
+    <section class="admin-panel">
+      <div class="admin-panel-head">
+        <h2>All products (5)</h2>
+        <a href="#addProduct" class="btn-primary">+ Add product</a>
+      </div>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="prod-name"><span class="ball"></span>Classic Graham Ball</span></td>
+            <td>Original</td>
+            <td>₱120</td>
+            <td>86</td>
+            <td><span class="status-pill in-stock">In stock</span></td>
+            <td><div class="row-actions"><button title="Edit">✎</button><button title="Delete">✕</button></div></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name"><span class="ball"></span>Choco Overload</span></td>
+            <td>Chocolate</td>
+            <td>₱140</td>
+            <td>54</td>
+            <td><span class="status-pill in-stock">In stock</span></td>
+            <td><div class="row-actions"><button title="Edit">✎</button><button title="Delete">✕</button></div></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name"><span class="ball"></span>Ube</span></td>
+            <td>Seasonal</td>
+            <td>₱150</td>
+            <td>9</td>
+            <td><span class="status-pill low">Low stock</span></td>
+            <td><div class="row-actions"><button title="Edit">✎</button><button title="Delete">✕</button></div></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name"><span class="ball"></span>Matcha</span></td>
+            <td>Seasonal</td>
+            <td>₱150</td>
+            <td>41</td>
+            <td><span class="status-pill in-stock">In stock</span></td>
+            <td><div class="row-actions"><button title="Edit">✎</button><button title="Delete">✕</button></div></td>
+          </tr>
+          <tr>
+            <td><span class="prod-name"><span class="ball"></span>Mango</span></td>
+            <td>Fruity</td>
+            <td>₱140</td>
+            <td>0</td>
+            <td><span class="status-pill out">Out of stock</span></td>
+            <td><div class="row-actions"><button title="Edit">✎</button><button title="Delete">✕</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</div>
+
+<div class="modal" id="addProduct">
+  <div class="modal-box">
+    <a href="#" class="modal-close" aria-label="Close">✕</a>
+    <h1 style="font-size:1.4rem;">Add product</h1>
+    <p class="sub">Add a new flavor to the shop.</p>
+    <form>
+      <div>
+        <label for="pName">Product name</label>
+        <input type="text" id="pName" placeholder="e.g. Biscoff">
+      </div>
+      <div>
+        <label for="pCategory">Category</label>
+        <input type="text" id="pCategory" placeholder="e.g. Seasonal">
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="pPrice">Price (₱)</label>
+          <input type="number" id="pPrice" placeholder="140">
+        </div>
+        <div>
+          <label for="pStock">Stock</label>
+          <input type="number" id="pStock" placeholder="50">
+        </div>
+      </div>
+      <button class="btn-primary" type="submit">Save product</button>
+    </form>
+  </div>
+</div>
+<a href="#" class="overlay" aria-hidden="true"></a>
+
+</body>
+</html>
