@@ -304,6 +304,29 @@ form input,form textarea{
 form textarea{min-height:120px;resize:vertical;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 
+/* ---------- auth ---------- */
+.auth-wrap{
+  max-width:440px;margin:0 auto;padding:40px 28px 70px;
+}
+.auth-card{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--radius-lg);padding:36px 32px;
+  box-shadow:var(--shadow);
+}
+.auth-card h1{font-size:1.6rem;margin-bottom:.2em;}
+.auth-card .sub{font-size:.92rem;margin-bottom:22px;}
+.auth-row-between{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;margin-top:-4px;}
+.auth-row-between a{color:var(--ink-soft);border-bottom:1px solid var(--line);}
+.auth-row-between a:hover{color:var(--pink);border-color:var(--pink);}
+.check-row{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--ink-soft);}
+.check-row input{width:auto;}
+.auth-card .btn-primary{width:100%;text-align:center;margin-top:6px;}
+.auth-divider{display:flex;align-items:center;gap:12px;margin:22px 0;color:var(--ink-soft);font-size:.8rem;}
+.auth-divider::before,.auth-divider::after{content:'';flex:1;height:1px;background:var(--line);}
+.auth-foot{text-align:center;font-size:.88rem;margin-top:18px;color:var(--ink-soft);}
+.auth-foot a{color:var(--ink);border-bottom:1px solid var(--line);}
+.auth-foot a:hover{color:var(--pink);border-color:var(--pink);}
+
 /* ---------- FAQ ---------- */
 .faq-list{max-width:800px;margin:0 auto;padding:0 28px;}
 .faq-item{border-bottom:1px solid var(--line);}
